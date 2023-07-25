@@ -2,16 +2,43 @@
 <head>
 <title>Test3: tablet screen</title>
 <link rel="icon" type="image/x-icon" href="file:///C:/Users/rajee/OneDrive/Desktop/spam/Intro to HTML/Alisha 2x2.jpg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    
-  <center>
-    <div style="width: 1040px; background-color: lightblue;">
-      
 
-        <h1 style="color: red;">Lakes</h1>
-        <p style="color: blue; size: 0cm;">In Minnesota</p>
+  <center>
+
+    <div>
+      <ul>
+        <li>
+          <button>
+            <a href="file:///C:/Users/rajee/OneDrive/Desktop/spam/Intro to HTML/example.html"><i class="material-symbols-outlined">Home</i></a>
+          </button>
+        </li>
+        <li>
+          <button>
+            <a href="https://github.com/alisha-stha"><i class="fa fa-github" style="font-size:24px"></i></a>
+          </button>
+        </li>
+        <li>
+          <button>
+            <a href="https://www.linkedin.com/in/alisha-shrestha-a94828170/"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a>
+          </button>
+        </li>
+        <li><a href="https://chromedino.com/"><i class="material-symbols-outlined">Mood</i></a></li>
+      </ul>
+    </div>
+    
+  
+    <div style="background-color: lightblue;">
+        <h1>Lakes</h1>
+        <p>In Minnesota</p>
+    </div>
+    <br>
+    <div style="background-color: grey;">
         <hr>
+        
         <table style="color: black; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;", border="1">
             <tr>
               <th>Name</th>
@@ -60,8 +87,7 @@
                 <td>
                     <img src="madison.jpg" alt="Sorry! Image isn't loading" width="300" height="300">
                 </td>
-            </tr>
-              
+            </tr>              
         </table>
 
         <button>
@@ -69,8 +95,37 @@
         </button>
       
     </div>
+
   </center>
     
     
 </body>
 </html>
+
+<style>
+  p{
+    color: blue; 
+    size: 0cm; 
+    z-index: 2;
+    background-color: bisque;
+    display: inline;
+    /* position: absolute; */
+  }
+
+  h1{
+    color: red;
+    z-index: 1;
+    background-color: rebeccapurple;
+    display: block;
+    /* position: absolute; */
+  }
+  
+  li{
+    display: inline-block;
+    width: 100px;
+    padding: 10px 60px 10px 60px;
+  }
+  div{
+    width: 1040px;
+  }
+</style>
