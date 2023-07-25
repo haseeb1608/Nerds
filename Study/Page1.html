@@ -1,6 +1,4 @@
-<!-- <!DOCTYPE html>
-2 new element that we didn't talk about class: boxes higlighting, Minneapolis Minnesota highlighting, and commenting out code via html   -->
-
+<!DOCTYPE html>
 <html>
 <head>
     <title>ME AND COFFEE</title>
@@ -25,6 +23,7 @@
         font-size: 16px;
         margin: 4px 2px;
         cursor: pointer;
+        display: block;
     }
     table {
         font-family: arial, sans-serif;
@@ -62,16 +61,79 @@
         background-color: #F8BBD0;
     }
 
-    /* Responsive Adjustments */
-    @media only screen and (max-width: 600px) {
-        table, td, th {
-            font-size: 14px;
-        }
+    .bbb{
+        position: absolute;
+        display: inline;
+        z-index: 1;
+        background-color: red; 
+    }
+    .ccc{
+        position: absolute;
+        display: inline;
+        z-index: -1;
+        background-color: orange;
     }
 
+    @font-face {
+     font-family: Lumanosimo-Regular;
+     src: url(lumanosimo-regular-webfont.woff); 
+    }
+
+    h1 {font-family: lumanosimo-regular;}
+
+    /* New styles for the nav bar */
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .navbar a:hover {
+        background-color: #F8BBD0;
+        color: black;
+    }
+
+    /* Media queries for mobile responsiveness */
+    @media only screen and (max-width: 600px) {
+        body {
+            font-size: 18px;
+        }
+        h1, h2 {
+            font-size: 24px;
+        }
+        .navbar a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+        table, td, th {
+            display: block;
+            width: 100%;
+        }
+        .link-button {
+            font-size: 18px;
+        }
+    }
     </style>
 </head>
 <body>
+    <!-- New navbar -->
+    <div class="navbar">
+        <a href="#home"> Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+   
+
     <h1>Katlin Sannan</h1>
     <h2 class="hover-text">Minneapolis, Minnesota</h2>
     <table>
@@ -116,5 +178,14 @@
         </tr>
     </table>
     <a href="page2.html" class="link-button">Go to Page 2</a>
+    
+    <div class="bbb">
+     <p>I want to see if this is working</p>
+    </div>
+
+
+    <div class="ccc">
+<p>I want to see if this is working</p>
+  </div>
 </body>
 </html>
