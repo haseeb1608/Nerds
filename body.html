@@ -1,3 +1,85 @@
+<html>
 <body>
-    <h1>Test1</h1>
+        <div class="topRight forAll">
+                Top Right
+        </div>
+        <div class="topLeft forAll">
+                Top Left
+        </div>
+        <div class="bottomRight forAll">
+                Bottom Right
+        </div>
+        <div class="bottomLeft forAll">
+                Bottom Left
+        </div>
+        <div class="middle forAll">
+                Middle
+        </div>
 </body>
+
+
+
+    <style>
+
+        div.forAll{
+            height: 200px;
+            width: 200px;
+            border: 3px solid #73AD21;
+        }
+
+        @media screen and (min-width: 641px) {            
+            div.topRight{
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            }
+            div.topLeft{
+                position: absolute;
+                left: 0px;
+                top: 0px;
+            }
+            div.bottomRight{
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+            }
+            div.bottomLeft{
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+            }
+            div.middle{
+                position: absolute;
+                right: 900px;
+                top: 400px;
+            }
+            .topRight:hover, .bottomRight:hover{
+                position: absolute;
+                top: 400px;
+                right: 400px;
+                background-color: green;
+            }
+            .topLeft:hover, .bottomLeft:hover{
+                position: absolute;
+                top: 400px;
+                left: 400px;
+                background-color: green;
+            }
+            .middle:hover{
+                position: absolute;
+                top: 400px;
+                left: 400px;
+                background-color: green;
+            }
+        } 
+            
+        
+
+        @media screen and (max-width: 640px) {
+                
+            div.topLeft, div.topRight, div.bottomLeft, div.bottomRight, div.middle{
+            background-color: blue;
+            }
+        }  
+    </style>
+</html>
