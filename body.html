@@ -1,3 +1,40 @@
 <body>
     <h1>Test1</h1>
+    <div class="b1"></div>
+    <div class="b2"></div>
+    <div class="b3"></div>
 </body>
+
+<style>
+     div{
+        height: 300px;
+        width: 300px;
+    }
+    .b1{
+        background-color: red;
+        position: absolute;
+    }
+    .b2{
+        background-color: blue;
+        position: absolute;
+        left: 150px;
+    }
+    .b3{
+        background-color: yellow;
+        position: absolute;
+        left: 300px
+    }
+    .b3:hover{
+        display: none;
+    }
+    .b2:hover{
+        left:700px;
+    }
+    @media only screen and (max-width: 640px){
+        .b1{
+        background-color: black;
+    }
+    }  
+</style>
+
+
