@@ -1,0 +1,45 @@
+<html>
+<body>
+<center>
+<h2>Generate your shopping list.</h2>
+<h3>What would you like to add?</h3>
+<input type="text" id="word" onfocus="this.value=''"> </input>
+<button type="submit" id="Add" onclick="additem()">Add</button>
+<button type="submit" onclick="removeall()"> clear list</button>
+<p id="demo"></p>
+<p id="demo1"></p>
+</center>
+<script>
+const items=[];
+
+function removeall(){
+        items.splice(0, items.length)
+        document.getElementById("demo").innerHTML = items;
+    }
+
+function additem(){
+    x=items.length;
+    a= document.getElementById("word").value;
+
+    if(items.includes(a) != true){
+            items.push(a);        
+        }
+    else{
+        i=items.indexOf(a);
+        items.splice(i,1);
+    }
+
+    let text = "";
+    items.forEach(listit);
+    text += "</ul>";
+    document.getElementById("demo").innerHTML = text;
+
+    function listit(value) {
+        text += "<li>" + value + "</li>";       
+        }                
+        // document.getElementById("demo1").innerHTML = items;
+}  
+</script>
+
+</body>
+</html>
